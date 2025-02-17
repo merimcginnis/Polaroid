@@ -1,65 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+:root {
+    --main-bg-color: #E9E9E9;
+    --primary-text-color: #424242;
+    --accent-color: #FF3F3C;
+}
+
 body {
-    font-family: "Inter";
-    color: #424242;
-    background: #E9E9E9;
-    margin: 0 230px;
+    background: var(--main-bg-color);
+    color: var(--primary-text-color);
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+main {
+    background: url('/images/polaroid.png') no-repeat center 100px;
+    margin: 0 auto;
+    width: 1000px;
+
+}
+
+.hero {
     text-align: center;
+    min-height: 800px;
 }
 
-h1 {
-    display: flex;
-    width: 496px;
-    height: 58px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 36px;
-    font-weight: 700;
+.hero h2 {
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
 }
 
-h2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-
-    text-align: center;
-    font-size: 180px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 180px; /* 100% */
+.details. ul, li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 40px;
 }
 
-h3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-
-    text-align: center;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 180px; /* 281.25% */
-}
-
-p {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 42px; /* 131.25% */
-}
-
-li {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 75px; /* 234.375% */
-    text-align: left;
-}
-
-.cta {
-
+.details. ul, li.qr {
+    background: url('/images/qrcode-solid.svg') no-repeat center left;
 }
